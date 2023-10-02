@@ -14,4 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LandingPageController::class, 'index']);
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::get('/', [LandingPageController::class, 'index'])->name('landingpage.home');
