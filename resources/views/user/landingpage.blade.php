@@ -30,21 +30,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Prestasi</a>
+                        <a class="nav-link" href="#">Prestasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Galery</a>
+                        <a class="nav-link" href="#">Galery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Tentang Kami</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Tentang Kami</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kepengurusan</a></li>
+                            <li><a class="dropdown-item" href="#">Departemen</a></li>
+                            <li><a class="dropdown-item" href="#">Login Pengurus</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <button class="btn btn-danger">Register</button>
-                </div>
             </div>
         </div>
     </nav>
