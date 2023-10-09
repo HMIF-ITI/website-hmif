@@ -333,6 +333,14 @@ body {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#hero-bg {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../asset/images/background.png");
+    background-size: cover;
+    position: relative;
+}
+
 #hero {
     width: 100%;
     height: 80vh;
