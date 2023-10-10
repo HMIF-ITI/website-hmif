@@ -1,0 +1,45 @@
+#hero {
+    width: 100%;
+    height: 70vh;
+    background: url("../image/hero-bg.svg") center center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    font-weight: 700;
+}
+
+.hero-text h3 {
+    font-weight: 400;
+}
+
+#prestasi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prestasi-card {
+    /* background-color: #ddd; */
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.prestasi-img {
+    border-radius: 8px 8px 0 0;
+}
+
+.prestasi-card div div a {
+    color: #FD6B04;
+}
+
+.card-title {
+    font-size: 15px;
+}

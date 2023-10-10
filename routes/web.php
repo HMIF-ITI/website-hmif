@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [LandingPageController::class, 'index']);
+
+Route::get('/prestasipage', function () {
+	return view('prestasipage');
+});
