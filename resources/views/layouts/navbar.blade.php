@@ -11,8 +11,8 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
-            <li><a class="nav-link scrollto" href="#about">Prestasi</a></li>
-            <li><a class="nav-link scrollto" href="#services">Galeri</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('prestasi') }}">Prestasi</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('gallery') }}">Galeri</a></li>
             <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="#">Drop Down 1</a></li>

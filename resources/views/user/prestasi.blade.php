@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+@section('title', 'Welcome')
+
+@section('content')
+
 <!doctype html>
 <html lang="en">
 
