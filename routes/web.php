@@ -18,13 +18,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
 Route::get('/', [LandingPageController::class, 'index']);
 
-Route::get('/prestasipage', function () {
-	return view('prestasipage');
-});
-=======
+// Route::get('/prestasi', function () {
+// 	return view('prestasipage');
+// });
+
 // Routes User
 // Home
 Route::get('/', [LandingPageController::class, 'index'])->name('landingpage.home');
@@ -43,4 +42,3 @@ Route::get('/departemen', [DepartemenController::class, 'index'])->name('departe
 
 
 // Routes Admin
->>>>>>> 99c87edaf507bf4da701f547656b0ce3be975c00
