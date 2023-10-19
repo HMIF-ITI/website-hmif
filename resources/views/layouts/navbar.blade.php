@@ -4,13 +4,12 @@
       <div class="header-container d-flex align-items-center justify-content-between">
         <div class="logo">
           <h1 class="text-light"><a href="index.html"><span>HMIF</span></a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
           {{-- <a href="index.html"><img src="{{  }}" alt="" class="img-fluid"></a> --}}
         </div>
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('#') }}">Beranda</a></li>
             <li><a class="nav-link scrollto" href="{{ url('prestasi') }}">Prestasi</a></li>
             <li><a class="nav-link scrollto" href="{{ url('gallery') }}">Galeri</a></li>
             <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
@@ -23,8 +22,8 @@
             </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+        </nav>
 
-      </div><!-- End Header Container -->
+      </div>
     </div>
-  </header><!-- End Header -->
+  </header>
