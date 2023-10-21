@@ -1,14 +1,14 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Tambah Kegiatan Berlangsung')
+@section('title', 'Tambah Kepengurusan')
 
 @section('content')
 
     <div class="container">
-        <a href="/ongoing" class="btn btn-primary mb-3">Kembali</a>
+        <a href="/management" class="btn btn-primary mb-3">Kembali</a>
         <div class="row">
             <div class="col-md-12">
-                <form action="{{ route('ongoing.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('management.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="">Judul</label>
