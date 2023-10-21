@@ -208,4 +208,3 @@
 @each $name, $color in $colors {
   @include pace-variant($name, $color);
 }
-
