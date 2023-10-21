@@ -59,7 +59,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <li class="nav-item">
-                            <a href="/dashboard" class="nav-link">
+                            <a href="/admin/dashboard" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -84,37 +84,37 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="/upcoming" class="nav-link">
+                                    <a href="/admin/upcoming" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Kegiatan Mendatang</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/ongoing" class="nav-link">
+                                    <a href="/admin/ongoing" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Kegiatan Berlangsung</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/achievment" class="nav-link">
+                                    <a href="/admin/achievment" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Prestasi</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/gallery" class="nav-link">
+                                    <a href="/admin/gallery" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Galeri</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/departement" class="nav-link">
+                                    <a href="/admin/departement" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Departemen</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/management" class="nav-link">
+                                    <a href="/admin/management" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Kepengurusan</p>
                                     </a>
@@ -122,7 +122,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">
+                            <a href="/admin/contact" class="nav-link">
                                 <i class="nav-icon fas fa-phone"></i>
                                 <p>
                                     Kontak

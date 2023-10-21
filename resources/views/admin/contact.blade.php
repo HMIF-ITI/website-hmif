@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Edit Kegiatan Berlangsung')
+@section('title', 'Edit Kontak')
 
 @section('content')
 
@@ -13,7 +13,7 @@
                         <p>{{ $message }}</p>
                     </div>
                 @endif
-                <form action="/contact/{{ $contact->id }}" method="POST" enctype="multipart/form-data">
+                <form action="/admin/contact/{{ $contact->id }}" method="POST" enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
                     <div class="form-group">

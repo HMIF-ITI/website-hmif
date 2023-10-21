@@ -48,7 +48,7 @@ class UpcomingController extends Controller
 
         Upcoming::create($input);
 
-        return redirect('/upcoming')->with('message', 'Data berhasil ditambahkan');
+        return redirect('/admin/upcoming')->with('message', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -93,7 +93,7 @@ class UpcomingController extends Controller
 
         $upcoming->update($input);
 
-        return redirect('/upcoming')->with('message', 'Data berhasil diedit');
+        return redirect('/admin/upcoming')->with('message', 'Data berhasil diedit');
     }
 
     /**
@@ -103,6 +103,6 @@ class UpcomingController extends Controller
     {
         $upcoming->delete();
 
-        return redirect('/upcoming')->with('message', 'Data berhasil dihapus');
+        return redirect('/admin/upcoming')->with('message', 'Data berhasil dihapus');
     }
 }

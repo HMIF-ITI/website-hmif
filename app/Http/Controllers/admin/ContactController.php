@@ -15,7 +15,7 @@ class ContactController extends Controller
     {
         $contact = Contact::first();
 
-        return view('admin.contact.contact', compact('contact'));
+        return view('admin.contact', compact('contact'));
     }
 
     /**
@@ -80,7 +80,7 @@ class ContactController extends Controller
 
         $contact->update($input);
 
-        return redirect('/contact')->with('message', 'Data berhasil diedit');
+        return redirect('/admin/contact')->with('message', 'Data berhasil diedit');
     }
 
     /**

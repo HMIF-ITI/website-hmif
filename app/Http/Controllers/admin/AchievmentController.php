@@ -48,7 +48,7 @@ class AchievmentController extends Controller
 
         Achievment::create($input);
 
-        return redirect('/achievment')->with('message', 'Data berhasil ditambahkan');
+        return redirect('/admin/achievment')->with('message', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -93,7 +93,7 @@ class AchievmentController extends Controller
 
         $achievment->update($input);
 
-        return redirect('/achievment')->with('message', 'Data berhasil diedit');
+        return redirect('/admin/achievment')->with('message', 'Data berhasil diedit');
     }
 
     /**
@@ -103,6 +103,6 @@ class AchievmentController extends Controller
     {
         $achievment->delete();
 
-        return redirect('/achievment')->with('message', 'Data berhasil dihapus');
+        return redirect('/admin/achievment')->with('message', 'Data berhasil dihapus');
     }
 }

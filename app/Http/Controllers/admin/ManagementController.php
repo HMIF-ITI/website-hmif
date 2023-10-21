@@ -48,7 +48,7 @@ class ManagementController extends Controller
 
         Management::create($input);
 
-        return redirect('/management')->with('message', 'Data berhasil ditambahkan');
+        return redirect('/admin/management')->with('message', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -93,7 +93,7 @@ class ManagementController extends Controller
 
         $management->update($input);
 
-        return redirect('/management')->with('message', 'Data berhasil diedit');
+        return redirect('/admin/management')->with('message', 'Data berhasil diedit');
     }
 
     /**
@@ -103,6 +103,6 @@ class ManagementController extends Controller
     {
         $management->delete();
 
-        return redirect('/management')->with('message', 'Data berhasil dihapus');
+        return redirect('/admin/management')->with('message', 'Data berhasil dihapus');
     }
 }

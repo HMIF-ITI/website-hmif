@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="container">
-        <a href="/upcoming" class="btn btn-primary mb-3">Kembali</a>
+        <a href="/admin/upcoming" class="btn btn-primary mb-3">Kembali</a>
         <div class="row">
             <div class="col-md-12">
                 <form action="{{ route('upcoming.store') }}" method="POST" enctype="multipart/form-data">

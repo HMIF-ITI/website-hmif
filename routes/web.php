@@ -43,12 +43,15 @@ Route::post('/login', [AuthController::class, 'authenticated']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
 // Dashboard
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
-Route::resource('upcoming', UpcomingController::class)->middleware('auth');
-Route::resource('ongoing', OngoingController::class)->middleware('auth');
-Route::resource('achievment', AchievmentController::class)->middleware('auth');
-Route::resource('gallery', GalleryController::class)->middleware('auth');
-Route::resource('management', ManagementController::class)->middleware('auth');
+Route::prefix('/admin')->middleware('auth')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index']);
 
-Route::get('/contact', [ContactController::class, 'index'])->middleware('auth');
-Route::put('/contact/{id}', [ContactController::class, 'update'])->middleware('auth');
+    Route::resource('upcoming', UpcomingController::class);
+    Route::resource('ongoing', OngoingController::class);
+    Route::resource('achievment', AchievmentController::class);
+    Route::resource('gallery', GalleryController::class);
+    Route::resource('management', ManagementController::class);
+
+    Route::get('contact', [ContactController::class, 'index']);
+    Route::put('contact/{id}', [ContactController::class, 'update']);
+});

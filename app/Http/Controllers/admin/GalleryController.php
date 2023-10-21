@@ -47,7 +47,7 @@ class GalleryController extends Controller
 
         Gallery::create($input);
 
-        return redirect('/gallery')->with('message', 'Data berhasil ditambahkan');
+        return redirect('/admin/gallery')->with('message', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -91,7 +91,7 @@ class GalleryController extends Controller
 
         $gallery->update($input);
 
-        return redirect('/gallery')->with('message', 'Data berhasil diedit');
+        return redirect('/admin/gallery')->with('message', 'Data berhasil diedit');
     }
 
     /**
@@ -101,6 +101,6 @@ class GalleryController extends Controller
     {
         $gallery->delete();
 
-        return redirect('/gallery')->with('message', 'Data berhasil dihapus');
+        return redirect('/admin/gallery')->with('message', 'Data berhasil dihapus');
     }
 }

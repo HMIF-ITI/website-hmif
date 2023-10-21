@@ -48,7 +48,7 @@ class OngoingController extends Controller
 
         Ongoing::create($input);
 
-        return redirect('/ongoing')->with('message', 'Data berhasil ditambahkan');
+        return redirect('/admin/ongoing')->with('message', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -93,7 +93,7 @@ class OngoingController extends Controller
 
         $ongoing->update($input);
 
-        return redirect('/ongoing')->with('message', 'Data berhasil diedit');
+        return redirect('/admin/ongoing')->with('message', 'Data berhasil diedit');
     }
 
     /**
@@ -103,6 +103,6 @@ class OngoingController extends Controller
     {
         $ongoing->delete();
 
-        return redirect('/ongoing')->with('message', 'Data berhasil dihapus');
+        return redirect('/admin/ongoing')->with('message', 'Data berhasil dihapus');
     }
 }
