@@ -28,21 +28,23 @@
                         $i = 1;
                     @endphp
                     @foreach ($ongoings as $ongoing)
-                        <td>{{ $i++ }}</td>
-                        <td>{{ $ongoing->title }}</td>
-                        <td>{{ $ongoing->description }}</td>
-                        <td>
-                            <img src="/image/{{ $ongoing->image }}" alt="" class="img-fluid" width="90">
-                        </td>
-                        <td>
-                            <a href="{{ route('ongoing.edit', $ongoing->id) }}" class="btn btn-warning">Edit</a>
-                            <p></p>
-                            <form action="{{ route('ongoing.destroy', $ongoing->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
-                            </form>
-                        </td>
+                        <tr>
+                            <td>{{ $i++ }}</td>
+                            <td>{{ $ongoing->title }}</td>
+                            <td>{{ $ongoing->description }}</td>
+                            <td>
+                                <img src="/image/{{ $ongoing->image }}" alt="" class="img-fluid" width="90">
+                            </td>
+                            <td>
+                                <a href="{{ route('ongoing.edit', $ongoing->id) }}" class="btn btn-warning">Edit</a>
+                                <p></p>
+                                <form action="{{ route('ongoing.destroy', $ongoing->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                </form>
+                            </td>
+                        </tr>
                     @endforeach
                 </tbody>
             </table>
