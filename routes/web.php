@@ -5,11 +5,9 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\UpcomingController;
 use App\Http\Controllers\admin\OngoingController;
 use App\Http\Controllers\admin\AchievmentController;
-use App\Http\Controllers\LandingPageController;
-use App\Http\Controllers\PrestasiController;
-use App\Http\Controllers\KepengurusanController;
-use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\DepartemenController;
+use App\Http\Controllers\admin\GalleryController;
+use App\Http\Controllers\HomeController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,27 +21,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LandingPageController::class, 'index']);
-
 // Route::get('/prestasi', function () {
 // 	return view('prestasipage');
 // });
 
 // Routes User
 // Home
-Route::get('/', [LandingPageController::class, 'index']);
-
-// Prestasi
-Route::get('/prestasi', [PrestasiController::class, 'index']);
-
-// Galery
-Route::get('/gallery', [GalleryController::class, 'index']);
-
-// Kepengurusan
-Route::get('/kepengurusan', [KepengurusanController::class, 'index']);
-
-// Departemen
-Route::get('/departemen', [DepartemenController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/prestasi', [HomeController::class, 'prestasi']);
+Route::get('/galeri', [HomeController::class, 'gallery']);
+Route::get('/departemen', [HomeController::class, 'departemen']);
+Route::get('/kepengurusan', [HomeController::class, 'kepengurusan']);
 
 
 // Routes Admin
@@ -57,3 +45,4 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 Route::resource('upcoming', UpcomingController::class)->middleware('auth');
 Route::resource('ongoing', OngoingController::class)->middleware('auth');
 Route::resource('achievment', AchievmentController::class)->middleware('auth');
+Route::resource('gallery', GalleryController::class)->middleware('auth');
