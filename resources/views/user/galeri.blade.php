@@ -17,11 +17,19 @@
 
     <body>
 
-        <section id="hero-galeri" class="d-flex flex-column justify-content-center align-items-center">
+        {{-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container text-center text-md-left hero-text-galeri" data-aos="fade-up">
                 <h1>Galeri Himpunan Mahasiswa Teknik Informatika ITI</h1>
-                <h3>Galeri HMIF ITI, Sarana Inspirasi Teknik Informatika!</h3>
+                <h6 class="teks">Galeri HMIF ITI, Sarana Inspirasi Teknik Informatika!</h6>
                 <!-- <h3>HMIF-ITI, Tempat Inspirasi!</> -->
+            </div>
+        </section> --}}
+
+        <section id="hero" class="d-flex align-items-center">
+            <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+                <h1 class="mb-3">Galeri Himpunan Mahasiswa Teknik Informatika ITI</h1>
+                <h6 class="teks">Galeri HMIF ITI, Sarana Inspirasi Teknik Informatika!
+                    </h5>
             </div>
         </section>
 
