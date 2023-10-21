@@ -7,6 +7,7 @@ use App\Http\Controllers\admin\OngoingController;
 use App\Http\Controllers\admin\AchievmentController;
 use App\Http\Controllers\admin\GalleryController;
 use App\Http\Controllers\admin\ManagementController;
+use App\Http\Controllers\admin\ContactController;
 use App\Http\Controllers\HomeController;
 
 use Illuminate\Support\Facades\Route;
@@ -48,3 +49,6 @@ Route::resource('ongoing', OngoingController::class)->middleware('auth');
 Route::resource('achievment', AchievmentController::class)->middleware('auth');
 Route::resource('gallery', GalleryController::class)->middleware('auth');
 Route::resource('management', ManagementController::class)->middleware('auth');
+
+Route::get('/contact', [ContactController::class, 'index'])->middleware('auth');
+Route::put('/contact/{id}', [ContactController::class, 'update'])->middleware('auth');
