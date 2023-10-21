@@ -1,22 +1,22 @@
-@extends('layouts.app')
+@extends('user.layouts.app')
 
 @section('title', 'Welcome')
 
 @section('content')
 
     <!-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-                            <div class="container text-center text-md-left hero-text" data-aos="fade-up">
-                              <h1>Prestasi Mahasiswa <span>HMIF-ITI</span></h1>
-                              <h3>Berkilau di Puncak Prestasi! Halaman Prestasi Mahasiswa</h3>
-                              <h3>HMIF-ITI, Tempat Inspirasi!</>
-                            </div>
-                          </section> -->
+                                <div class="container text-center text-md-left hero-text" data-aos="fade-up">
+                                  <h1>Prestasi Mahasiswa <span>HMIF-ITI</span></h1>
+                                  <h3>Berkilau di Puncak Prestasi! Halaman Prestasi Mahasiswa</h3>
+                                  <h3>HMIF-ITI, Tempat Inspirasi!</>
+                                </div>
+                              </section> -->
 
     <section id="hero" class="d-flex align-items-center">
         <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
             <!-- <h1>HMIF - ITI</h1>
-                              <h5>Mengembangkan potensi mahasiswa Teknik Informatika dengan berlandaskan Tri Dharma Perguruan Tinggi</h5>
-                              <h3>Periode 2023/2024</h3> -->
+                                  <h5>Mengembangkan potensi mahasiswa Teknik Informatika dengan berlandaskan Tri Dharma Perguruan Tinggi</h5>
+                                  <h3>Periode 2023/2024</h3> -->
             <h1 class="mb-3">Prestasi Mahasiswa <span>HMIF-ITI</span></h1>
             <h6 class="teks">Berkilau di Puncak Prestasi! Halaman Prestasi Mahasiswa
                 <br>HMIF-ITI, Tempat Inspirasi!
