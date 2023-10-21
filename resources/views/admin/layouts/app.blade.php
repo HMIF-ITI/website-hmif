@@ -96,7 +96,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/achievments" class="nav-link">
+                                    <a href="/achievment" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Prestasi</p>
                                     </a>
