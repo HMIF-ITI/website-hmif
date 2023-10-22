@@ -96,6 +96,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    <a href="/admin/moment" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Moment</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a href="/admin/achievment" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Prestasi</p>
@@ -130,7 +136,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="/logout" class="nav-link">
                                 <i class="nav-icon fas fa-arrow-left"></i>
                                 <p>
                                     Logout

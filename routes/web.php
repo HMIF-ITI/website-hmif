@@ -8,6 +8,7 @@ use App\Http\Controllers\admin\AchievmentController;
 use App\Http\Controllers\admin\GalleryController;
 use App\Http\Controllers\admin\ManagementController;
 use App\Http\Controllers\admin\ContactController;
+use App\Http\Controllers\admin\MomentController;
 use App\Http\Controllers\HomeController;
 
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::resource('achievment', AchievmentController::class);
     Route::resource('gallery', GalleryController::class);
     Route::resource('management', ManagementController::class);
+    Route::resource('moment', MomentController::class);
 
     Route::get('contact', [ContactController::class, 'index']);
     Route::put('contact/{id}', [ContactController::class, 'update']);

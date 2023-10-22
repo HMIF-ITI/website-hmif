@@ -111,21 +111,14 @@
             <h1>Moment Terbaik Bersama Kami</h1>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ asset('asset/images/moment.png') }}" alt="" class="img-thumbnail">
+            @foreach ($moments as $moment)
+                <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="image/{{ $moment->image }}" alt="" class="img-thumbnail" width="360"
+                            height="140">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ asset('asset/images/moment.png') }}" alt="" class="img-thumbnail">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ asset('asset/images/moment.png') }}" alt="" class="img-thumbnail">
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
@@ -168,3 +161,4 @@
             </div>
         </div>
     </section>
+@endsection

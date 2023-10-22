@@ -13,7 +13,9 @@ class MomentController extends Controller
      */
     public function index()
     {
-        //
+        $moments = Moment::all();
+
+        return view('admin.moment.index', compact('moments'));
     }
 
     /**
@@ -21,7 +23,7 @@ class MomentController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.moment.create');
     }
 
     /**
@@ -29,7 +31,23 @@ class MomentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'image' => 'required|image'
+        ]);
+
+        $input = $request->all();
+
+        if ($image = $request->file('image')) {
+            $destinationPath = 'image/';
+            $imageName = $image->getClientOriginalName();
+            $image->move($destinationPath, $imageName);
+            $input['image'] = $imageName;
+        }
+
+        Moment::create($input);
+
+        return redirect('/admin/moment')->with('message', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -45,7 +63,9 @@ class MomentController extends Controller
      */
     public function edit(Moment $moment)
     {
-        //
+        $moments = Moment::all();
+
+        return view('admin.moment.edit', compact('moment'));
     }
 
     /**
@@ -53,7 +73,25 @@ class MomentController extends Controller
      */
     public function update(Request $request, Moment $moment)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'image' => 'image'
+        ]);
+
+        $input = $request->all();
+
+        if ($image = $request->file('image')) {
+            $destinationPath = 'image/';
+            $imageName = $image->getClientOriginalName();
+            $image->move($destinationPath, $imageName);
+            $input['image'] = $imageName;
+        } else {
+            unset($input['image']);
+        }
+
+        $moment->update($input);
+
+        return redirect('/admin/moment')->with('message', 'Data berhasil diedit');
     }
 
     /**
@@ -61,6 +99,8 @@ class MomentController extends Controller
      */
     public function destroy(Moment $moment)
     {
-        //
+        $moment->delete();
+
+        return redirect('/admin/moment')->with('message', 'Data berhasil dihapus');
     }
 }

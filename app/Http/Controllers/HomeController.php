@@ -9,6 +9,7 @@ use App\Models\Home;
 use App\Models\Management;
 use App\Models\Ongoing;
 use App\Models\Upcoming;
+use App\Models\Moment;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -20,11 +21,13 @@ class HomeController extends Controller
     {
         $ongoings = Ongoing::all();
         $upcomings = Upcoming::all();
+        $moments = Moment::all();
         $contacts = Contact::first();
 
         return view ('user.landingpage', compact(
             'ongoings',
             'upcomings',
+            'moments',
             'contacts'
         ));
     }
@@ -53,7 +56,11 @@ class HomeController extends Controller
 
     public function departemen()
     {
-        return view ('user.departemen');
+        $contacts = Contact::first();
+
+        return view ('user.departemen', compact(
+            'contacts'
+        ));
     }
 
     public function kepengurusan()
