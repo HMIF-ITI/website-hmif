@@ -16,15 +16,6 @@
     </head>
 
     <body>
-
-        {{-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-            <div class="container text-center text-md-left hero-text-galeri" data-aos="fade-up">
-                <h1>Galeri Himpunan Mahasiswa Teknik Informatika ITI</h1>
-                <h6 class="teks">Galeri HMIF ITI, Sarana Inspirasi Teknik Informatika!</h6>
-                <!-- <h3>HMIF-ITI, Tempat Inspirasi!</> -->
-            </div>
-        </section> --}}
-
         <section id="hero" class="d-flex align-items-center">
             <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
                 <h1 class="mb-3">Galeri Himpunan Mahasiswa Teknik Informatika ITI</h1>
@@ -33,75 +24,20 @@
             </div>
         </section>
 
-
         <div id="galeri" class="row px-5 mb-4">
             <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 p-5">
-                <div class="col">
-                    <div class="card galeri-card">
-                        <div class="card-body p-0"><img src="{{ asset('assets/image/card-galeri-img.svg') }}" alt=""
-                                class="w-100 card-img-top galeri-img">
-                            <div class="p-4">
-                                <h5 class="mb-0 text-center card-title">Rapat PERMIKOMNAS Wilayah IV di Himpunan Teknik
-                                    Informatika ITI 2023</h5>
+                @foreach ($galleries as $gallery)
+                    <div class="col">
+                        <div class="card galeri-card">
+                            <div class="card-body p-0"><img src="image/{{ $gallery->image }}" alt=""
+                                    class="w-100 card-img-top galeri-img">
+                                <div class="p-4">
+                                    <h5 class="mb-0 text-center card-title">{{ $gallery->title }}</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card galeri-card">
-                        <div class="card-body p-0"><img src="{{ asset('assets/image/card-galeri-img.svg') }}" alt=""
-                                class="w-100 card-img-top galeri-img">
-                            <div class="p-4">
-                                <h5 class="mb-0 text-center card-title">Rapat PERMIKOMNAS Wilayah IV di Himpunan Teknik
-                                    Informatika ITI 2023</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card galeri-card">
-                        <div class="card-body p-0"><img src="{{ asset('assets/image/card-galeri-img.svg') }}" alt=""
-                                class="w-100 card-img-top galeri-img">
-                            <div class="p-4">
-                                <h5 class="mb-0 text-center card-title">Rapat PERMIKOMNAS Wilayah IV di Himpunan Teknik
-                                    Informatika ITI 2023</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card galeri-card">
-                        <div class="card-body p-0"><img src="{{ asset('assets/image/card-galeri-img.svg') }}" alt=""
-                                class="w-100 card-img-top galeri-img">
-                            <div class="p-4">
-                                <h5 class="mb-0 text-center card-title">Rapat PERMIKOMNAS Wilayah IV di Himpunan Teknik
-                                    Informatika ITI 2023</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card galeri-card">
-                        <div class="card-body p-0"><img src="{{ asset('assets/image/card-galeri-img.svg') }}" alt=""
-                                class="w-100 card-img-top galeri-img">
-                            <div class="p-4">
-                                <h5 class="mb-0 text-center card-title">Rapat PERMIKOMNAS Wilayah IV di Himpunan Teknik
-                                    Informatika ITI 2023</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card galeri-card">
-                        <div class="card-body p-0"><img src="{{ asset('assets/image/card-galeri-img.svg') }}" alt=""
-                                class="w-100 card-img-top galeri-img">
-                            <div class="p-4">
-                                <h5 class="mb-0 text-center card-title">Rapat PERMIKOMNAS Wilayah IV di Himpunan Teknik
-                                    Informatika ITI 2023</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 

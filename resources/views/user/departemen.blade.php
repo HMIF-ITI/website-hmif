@@ -12,14 +12,6 @@
 </head>
 
 <body>
-    <!-- Hero Section -->
-    {{-- <section id="hero-bg" class="flex flex-col justify-center items-center h-[80vh] lg:px-[116px] px-4">
-        <h1 class="text-white lg:text-4xl md:text-3xl text-2xl text-center font-bold pt-16">Departemen Himpunan Mahasiswa
-            Teknik Informatika</h1>
-        <p class="text-white lg:text-xl md:text-lg sm:text-base text-sm lg:max-w-xl max-w-xs text-center pt-2">
-            Kepengurusan HMIF 2023/2024 terdiri dari 3 departemen, 5 divisi, dan 59 anggota bermandat dengan tugas dan
-            program kerja yang berbeda.</p>
-    </section> --}}
 
     <section id="hero" class="d-flex align-items-center">
         <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">

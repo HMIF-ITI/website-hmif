@@ -66,83 +66,41 @@
         </div>
     </section>
 
-
     {{-- Kegiatan --}}
     <section id="kegiatan">
         <div class="kegiatan-progress">
             <h1 class="mx-3">Kegiatan Berlangsung</h1>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="{{ asset('asset/images/psdm.png') }}" alt="" class="img-thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelatihan Bulanan</h5>
-                            <p class="card-text">Pelatihan Bulanan merupakan program kerja dari PSDM yang dilaksanakan
-                                selama 3 bulan. Dalam pelatihan ini terdapat 3 bidang yang disediakan yaitu Network
-                                Computing Web Developer & UI/UX Design</p>
+                @foreach ($ongoings as $index => $ongoing)
+                    <div class="col-md-4 col-sm-6" {{ $index === 0 ? 'active' : '' }}>
+                        <div class="card">
+                            <img src="image/{{ $ongoing->image }}" alt="" class="img-thumbnail" width="360"
+                                height="140">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $ongoing->title }}</h5>
+                                <p class="card-text">{{ $ongoing->description }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="{{ asset('asset/images/psdm.png') }}" alt="" class="img-thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelatihan Bulanan</h5>
-                            <p class="card-text">Pelatihan Bulanan merupakan program kerja dari PSDM yang dilaksanakan
-                                selama 3 bulan. Dalam pelatihan ini terdapat 3 bidang yang disediakan yaitu Network
-                                Computing Web Developer & UI/UX Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="{{ asset('asset/images/psdm.png') }}" alt="" class="img-thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelatihan Bulanan</h5>
-                            <p class="card-text">Pelatihan Bulanan merupakan program kerja dari PSDM yang dilaksanakan
-                                selama 3 bulan. Dalam pelatihan ini terdapat 3 bidang yang disediakan yaitu Network
-                                Computing Web Developer & UI/UX Design</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
+
         <div class="kegiatan-soon">
             <h1 class="mx-3">Kegiatan Mendatang</h1>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="{{ asset('asset/images/psdm.png') }}" alt="" class="img-thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelatihan Bulanan</h5>
-                            <p class="card-text">Pelatihan Bulanan merupakan program kerja dari PSDM yang dilaksanakan
-                                selama 3 bulan. Dalam pelatihan ini terdapat 3 bidang yang disediakan yaitu Network
-                                Computing Web Developer & UI/UX Design</p>
+                @foreach ($upcomings as $index => $upcoming)
+                    <div class="col-md-4 col-sm-6" {{ $index === 0 ? 'active' : '' }}>
+                        <div class="card">
+                            <img src="image/{{ $upcoming->image }}" alt="" class="img-thumbnail" width="360"
+                                height="140">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $upcoming->title }}</h5>
+                                <p class="card-text">{{ $upcoming->description }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="{{ asset('asset/images/psdm.png') }}" alt="" class="img-thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelatihan Bulanan</h5>
-                            <p class="card-text">Pelatihan Bulanan merupakan program kerja dari PSDM yang dilaksanakan
-                                selama 3 bulan. Dalam pelatihan ini terdapat 3 bidang yang disediakan yaitu Network
-                                Computing Web Developer & UI/UX Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="{{ asset('asset/images/psdm.png') }}" alt="" class="img-thumbnail">
-                        <div class="card-body">
-                            <h5 class="card-title">Pelatihan Bulanan</h5>
-                            <p class="card-text">Pelatihan Bulanan merupakan program kerja dari PSDM yang dilaksanakan
-                                selama 3 bulan. Dalam pelatihan ini terdapat 3 bidang yang disediakan yaitu Network
-                                Computing Web Developer & UI/UX Design</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -192,8 +150,8 @@
                                     placeholder="Nama Kamu" required />
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Email" required />
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                                    required />
                             </div>
                         </div>
                         <div class="form-group">

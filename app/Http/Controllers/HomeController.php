@@ -2,7 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Achievment;
+use App\Models\Contact;
+use App\Models\Gallery;
 use App\Models\Home;
+use App\Models\Management;
+use App\Models\Ongoing;
+use App\Models\Upcoming;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,17 +18,37 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view ('user.landingpage');
+        $ongoings = Ongoing::all();
+        $upcomings = Upcoming::all();
+        $contacts = Contact::first();
+
+        return view ('user.landingpage', compact(
+            'ongoings',
+            'upcomings',
+            'contacts'
+        ));
     }
 
     public function prestasi()
     {
-        return view ('user.prestasi');
+        $achievments = Achievment::all();
+        $contacts = Contact::first();
+
+        return view ('user.prestasi', compact(
+            'achievments',
+            'contacts'
+        ));
     }
 
     public function gallery()
     {
-        return view ('user.galeri');
+        $galleries = Gallery::all();
+        $contacts = Contact::first();
+
+        return view ('user.galeri', compact(
+            'galleries',
+            'contacts'
+        ));
     }
 
     public function departemen()
@@ -32,6 +58,10 @@ class HomeController extends Controller
 
     public function kepengurusan()
     {
-        return view ('user.kepengurusan');
+        $contacts = Contact::first();
+
+        return view ('user.kepengurusan', compact(
+            'contacts'
+        ));
     }
 }
