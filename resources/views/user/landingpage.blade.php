@@ -6,44 +6,73 @@
 
     {{-- Section Hero --}}
     <section id="hero" class="d-flex align-items-center">
-        <div class="container text-center position-relative">
-            <h1>HMIF - ITI</h1>
-            <h5>Mengembangkan potensi mahasiswa Teknik Informatika dengan berlandaskan Tri Dharma Perguruan Tinggi</h5>
-            <h3>Periode 2023/2024</h3>
+        <div class="container position-relative">
+            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1 justify-content-center align-items-center">
+                <div class="col col-lg-6 text-white">
+                    <h1 class="mb-3 fs-1 fw-bold">HMIF - ITI</h1>
+                    <h6 class="mb-3 fs-4">Himpunan Mahasiswa Teknik Informatika Institut Teknologi Indonesia</h6>
+                    <p class="fw-light">Mengembangkan potensi mahasiswa Teknik Informatika <br> dengan berlandaskan Tri
+                        Dharma Perguruan
+                        Tinggi
+                    </p>
+                </div>
+                <div class="col col-lg-4 text-center">
+                    <img src="{{ url('/asset/images/logo.png') }}" alt="" srcset="">
+                </div>
+            </div>
+
         </div>
     </section>
 
     {{-- Section Tujuan --}}
-    <section id="tujuan" class="d-flex align-items-center">
-        <div class="tujuan-1 container text-center position-relative">
-            <h1>Gambaran Umum</h1>
-            <h5>Himpunan Mahasiswa Teknik Informatika (HMIF) - Institut Teknologi Indonesia merupakan organisasi mahasiswa
-                program studi Teknik Informatika di Institut Teknologi Indonesia yang bertujuan mengembangkan potensi
-                mahasiswa Teknik Informatika dengan berlandaskan Tri Dharma Perguruan Tinggi</h5>
-            <h1>Melangkah Bersama Menuju Kemajuan</h1>
-            <h5>Menjadikan HMIF sebagai wadah bagi anggota maupun calon anggota untuk mengembangkan diri dalam bidang
-                akademik maupun non akademik dan menjadikan HMIF ITI menjadi organisasi yang aktif solutif dan produkif
-                secara internal maupun eksternal demi terwujudnya Tri Dharma Perguruan Tinggi</h5>
+    <section id="tujuan" class="p-3">
+        <div class="container align-items-center text-center align-items-center justify-content-center">
+            <div class="row d-flex mx-auto mb-5 pt-5">
+                <div class="col col-lg-10 mx-auto">
+                    <h3 class="fs-3 fw-bolder mb-3">Gambaran Umum</h3>
+                    <p class="fw-light">Himpunan Mahasiswa Teknik Informatika (HMIF) - Institut Teknologi Indonesia
+                        merupakan organisasi
+                        mahasiswa program studi Teknik Informatika di Institut Teknologi Indonesia yang bertujuan
+                        mengembangkan potensi mahasiswa Teknik Informatika dengan berlandaskan Tri Dharma Perguruan
+                        Tinggi</p>
+                </div>
+            </div>
+            <div class="row d-flex mx-auto">
+                <div class="col col-lg-10 mx-auto">
+                    <span class="fw-normal text-secondary lh-1">TUJUAN</span>
+                    <h3 class="fs- fw-bolder mb-3">Melangkah Bersama Menuju Kemajuan</h3>
+                    <p class="fw-light">Menjadikan HMIF sebagai wadah bagi anggota maupun calon anggota untuk mengembangkan
+                        diri dalam
+                        bidang akademik maupun non akademik dan menjadikan HMIF ITI menjadi organisasi yang aktif solutif
+                        dan
+                        produkif secara internal maupun eksternal demi terwujudnya Tri Dharma Perguruan Tinggi</p>
+                </div>
+            </div>
         </div>
     </section>
 
     {{-- Section Visi-Misi --}}
     <section id="vm" class="d-flex align-items-center">
-        <div class="vm-judul container text-center">
-            <h1>Visi & Misi</h1>
-            <div class="vm-visi-misi container">
-                <div class="vm-kolom">
-                    <h1>Visi</h1>
-                    <h5>Menjadikan HMIF sebagai wadah bagi anggota maupun calon anggota untuk mengembangkan diri dalam
-                        bidang akademik maupun non akademik dan menjadikan HMIF ITI menjadi organisasi yang aktif solutif
-                        dan produktif secara internal maupun eksternal demi terwujudnya Tri Dharma Perguruan Tinggi</h5>
+        <div class="vm-judul container m-5 py-5">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1 class="text-center fs-2">Visi & Misi</h1>
                 </div>
-                <div class="vm-kolom">
-                    <h1>Misi</h1>
-                    <h5>1.Meningkatkan kualitas secara akademik setiap anggota maupun calon anggota HMIF ITI</h5>
-                    <h5>2.Meningkatkan kualitas kegiatan sosial mahasiswa</h5>
-                    <h5>3.Membangun jaringan & kemitraan dengan pihak kampus organisasi kemahasiswaan lain & masyarakat umum
-                    </h5>
+            </div>
+            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1 justify-content-center">
+                <div class="col col-lg-5 py-3">
+                    <h3 class="fs-3 fw-bolder mb-3">Visi</h3>
+                    <p>Menjadikan HMIF sebagai wadah bagi anggota maupun calon anggota untuk
+                        mengembangkan diri dalam
+                        bidang akademik maupun non akademik dan menjadikan HMIF ITI menjadi organisasi yang aktif solutif
+                        dan produktif secara internal maupun eksternal demi terwujudnya Tri Dharma Perguruan Tinggi</p>
+                </div>
+                <div class="col col-lg-5 py-3">
+                    <h3 class="fs-3 fw-bolder mb-3">Misi</h3>
+                    <p>1.Meningkatkan kualitas secara akademik setiap anggota maupun calon anggota HMIF ITI</p>
+                    <p>2.Meningkatkan kualitas kegiatan sosial mahasiswa</p>
+                    <p>3.Membangun jaringan & kemitraan dengan pihak kampus organisasi kemahasiswaan lain & masyarakat umum
+                    </p>
                 </div>
             </div>
         </div>
@@ -52,15 +81,27 @@
     {{-- Proker --}}
     <section id="proker">
         <div class="proker-judul container text-center">
-            <h2>Aksi Kami untuk Kemajuan Bersama!</h2>
-            <div class="proker-buttons">
-                <div class="proker-col">
-                    <a href="#" class="proker-button">ABDIMAS</a>
-                    <a href="#" class="proker-button">I-FEST</a>
+            <div class="row mb-5">
+                <div class="col">
+                    <span class="fw-normal text-secondary lh-1">PROGRAM KERJA</span>
+                    <h3 class="fs- fw-bolder mb-3">Aksi Kami untuk Kemajuan Bersama!</h3>
                 </div>
-                <div class="proker-col">
-                    <a href="#" class="proker-button">PELITA</a>
-                    <a href="#" class="proker-button">LDO</a>
+            </div>
+            <div class="row row-cols-lg-3 row-cols-md-3 row-cols-2 mx-auto text-center justify-content-center list-proker">
+                <div class="col">
+                    <p>ABDIMAS</p>
+                </div>
+                <div class="col">
+                    <p>PERMAKOM</p>
+                </div>
+                <div class="col">
+                    <p>INFOCUP</p>
+                </div>
+                <div class="col">
+                    <p>PELITA</p>
+                </div>
+                <div class="col">
+                    <p>LDO</p>
                 </div>
             </div>
         </div>
@@ -68,8 +109,82 @@
 
     {{-- Kegiatan --}}
     <section id="kegiatan">
-        <div class="kegiatan-progress">
-            <h1 class="mx-3">Kegiatan Berlangsung</h1>
+        <div class="kegiatan-progress container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="fs- fw-bolder mb-4">Kegiatan Berlangsung</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5">
+                    <div class="card">
+                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="fw-bold fs-5">Card title</h5>
+                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5">
+                    <div class="card">
+                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="fw-bold fs-5">Card title</h5>
+                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5">
+                    <div class="card">
+                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="fw-bold fs-5">Card title</h5>
+                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 class="fs- fw-bolder mb-4">Kegiatan Mendatang</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center align-content-center">
+                <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
+                    <div class="card">
+                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="fw-bold fs-5">Card title</h5>
+                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
+                    <div class="card">
+                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="fw-bold fs-5">Card title</h5>
+                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
+                    <div class="card">
+                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="fw-bold fs-5">Card title</h5>
+                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- <h1 class="mx-3">Kegiatan Berlangsung</h1>
             <div class="row">
                 @foreach ($ongoings as $index => $ongoing)
                     <div class="col-md-4 col-sm-6" {{ $index === 0 ? 'active' : '' }}>
@@ -83,10 +198,10 @@
                         </div>
                     </div>
                 @endforeach
-            </div>
+            </div> --}}
         </div>
 
-        <div class="kegiatan-soon">
+        {{-- <div class="kegiatan-soon">
             <h1 class="mx-3">Kegiatan Mendatang</h1>
             <div class="row">
                 @foreach ($upcomings as $index => $upcoming)
@@ -102,7 +217,7 @@
                     </div>
                 @endforeach
             </div>
-        </div>
+        </div> --}}
     </section>
 
     {{-- Moment --}}
@@ -143,8 +258,8 @@
                                     placeholder="Nama Kamu" required />
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
-                                    required />
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Email" required />
                             </div>
                         </div>
                         <div class="form-group">

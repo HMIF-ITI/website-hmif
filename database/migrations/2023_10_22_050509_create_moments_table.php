@@ -16,8 +16,12 @@ return new class extends Migration
             $table->string('image');
             $table->string('title');
             $table->timestamps();
+            $table->string('divisi');
         });
     }
+
+    // $division = json_encode(['humas', 'kominfo']); // store
+    // $division = json_decode($data->division); // output, tinggal foreach
 
     /**
      * Reverse the migrations.
