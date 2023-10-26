@@ -117,7 +117,7 @@
             </div>
             @foreach ($ongoings as $index => $ongoing)
                 <div class="row justify-content-center align-items-center">
-                    <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5"
+                    <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5"
                         {{ $index === 0 ? 'active' : '' }}>
                         <div class="card">
                             <img src="image/{{ $ongoing->image }}" class="card-img-top" alt="...">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             @endforeach
-            <div class="row mt-5">
+            <div class="row">
                 <div class="col">
                     <h3 class="fs- fw-bolder mb-4">Kegiatan Mendatang</h3>
                 </div>
