@@ -13,7 +13,7 @@
                     @csrf
                     <div class="form-group">
                         <label for="">Divisi</label>
-                        <input type="text" class="form-control" name="divisi" placeholder="Judul" value="{{ $moment->divisi }}">
+                        <input type="text" class="form-control" name="divisi" placeholder="Divisi" value="{{ $moment->divisi }}">
                     </div>
                     @error('divisi')
                         <small style="color:red">{{ $message }}</small>
