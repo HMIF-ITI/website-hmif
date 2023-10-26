@@ -12,17 +12,45 @@
                     @method('PUT')
                     @csrf
                     <div class="form-group">
-                        <label for="">Judul</label>
-                        <input type="text" class="form-control" name="title" placeholder="Judul" value="{{ $management->title }}">
+                        <label for="">Nama</label>
+                        <input type="text" class="form-control" name="nama" placeholder="Nama" value="{{ $management->nama }}">
                     </div>
-                    @error('title')
+                    @error('nama')
                         <small style="color:red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">
-                        <label for="">Deskripsi</label>
-                        <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi">{{ $management->description }}</textarea>
+                        <label for="">Jabatan</label>
+                        <input type="text" class="form-control" name="jabatan" placeholder="Jabatan" value="{{ $management->jabatan }}">
                     </div>
-                    @error('description')
+                    @error('jabatan')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">Departemen</label>
+                        <input type="text" class="form-control" name="departemen" placeholder="Departemen" value="{{ $management->departemen }}">
+                    </div>
+                    @error('departemen')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">Instagram</label>
+                        <input type="text" class="form-control" name="instagram" placeholder="Instagram" value="{{ $management->instagram }}">
+                    </div>
+                    @error('instagram')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">LinkedIn</label>
+                        <input type="text" class="form-control" name="linkedin" placeholder="LinkedIn" value="{{ $management->linkedin }}">
+                    </div>
+                    @error('linkedin')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">GitHub</label>
+                        <input type="text" class="form-control" name="github" placeholder="GitHub" value="{{ $management->github }}">
+                    </div>
+                    @error('github')
                         <small style="color:red">{{ $message }}</small>
                     @enderror
                     <img src="/image/{{ $management->image }}" alt="img-fluid">

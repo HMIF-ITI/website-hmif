@@ -17,8 +17,12 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Judul</th>
-                        <th>Deskripsi</th>
+                        <th>Nama</th>
+                        <th>Jabatan</th>
+                        <th>Departemen</th>
+                        <th>Instagram</th>
+                        <th>LinkedIn</th>
+                        <th>Github</th>
                         <th>Gambar</th>
                         <th>Aksi</th>
                     </tr>
@@ -30,8 +34,12 @@
                     @foreach ($managements as $management)
                         <tr>
                             <td>{{ $i++ }}</td>
-                            <td>{{ $management->title }}</td>
-                            <td>{{ $management->description }}</td>
+                            <td>{{ $management->nama }}</td>
+                            <td>{{ $management->jabatan }}</td>
+                            <td>{{ $management->departemen }}</td>
+                            <td>{{ $management->instagram }}</td>
+                            <td>{{ $management->linkedin }}</td>
+                            <td>{{ $management->github }}</td>
                             <td>
                                 <img src="/image/{{ $management->image }}" alt="" class="img-fluid" width="90">
                             </td>

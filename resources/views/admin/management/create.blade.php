@@ -11,17 +11,45 @@
                 <form action="{{ route('management.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="">Judul</label>
-                        <input type="text" class="form-control" name="title" placeholder="Judul">
+                        <label for="">Nama</label>
+                        <input type="text" class="form-control" name="nama" placeholder="Nama">
                     </div>
-                    @error('title')
+                    @error('nama')
                         <small style="color:red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">
-                        <label for="">Deskripsi</label>
-                        <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
+                        <label for="">Jabatan</label>
+                        <input type="text" class="form-control" name="jabatan" placeholder="Jabatan">
                     </div>
-                    @error('description')
+                    @error('jabatan')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">Departemen</label>
+                        <input type="text" class="form-control" name="departemen" placeholder="Departemen">
+                    </div>
+                    @error('departemen')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">Instagram</label>
+                        <input type="text" class="form-control" name="instagram" placeholder="Instagram">
+                    </div>
+                    @error('instagram')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">LinkedIn</label>
+                        <input type="text" class="form-control" name="linkedin" placeholder="LinkedIn">
+                    </div>
+                    @error('linkedin')
+                        <small style="color:red">{{ $message }}</small>
+                    @enderror
+                    <div class="form-group">
+                        <label for="">GitHub</label>
+                        <input type="text" class="form-control" name="github" placeholder="GitHub">
+                    </div>
+                    @error('github')
                         <small style="color:red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">

@@ -113,12 +113,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Galeri</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="/admin/departement" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Departemen</p>
                                     </a>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a href="/admin/management" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>

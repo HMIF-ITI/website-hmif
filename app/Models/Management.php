@@ -10,8 +10,12 @@ class Management extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title',
-        'description',
+        'nama',
+        'jabatan',
+        'departemen',
+        'instagram',
+        'linkedin',
+        'github',
         'image'
     ];
 }

@@ -32,8 +32,12 @@ class ManagementController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
-            'description' => 'required',
+            'nama' => 'required',
+            'jabatan' => 'required',
+            'departemen' => 'required',
+            'instagram' => 'required',
+            'linkedin' => 'required',
+            'github' => 'required',
             'image' => 'required|image'
         ]);
 
@@ -75,8 +79,12 @@ class ManagementController extends Controller
     public function update(Request $request, Management $management)
     {
         $request->validate([
-            'title' => 'required',
-            'description' => 'required',
+            'nama' => 'required',
+            'jabatan' => 'required',
+            'departemen' => 'required',
+            'instagram' => 'required',
+            'linkedin' => 'required',
+            'github' => 'required',
             'image' => 'image'
         ]);
 
