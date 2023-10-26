@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('title');
             $table->timestamps();
-            $table->string('divisi');
+            $table->string('divisi')->nullable();
         });
     }
 

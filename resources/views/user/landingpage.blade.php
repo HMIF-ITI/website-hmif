@@ -115,75 +115,40 @@
                     <h3 class="fs- fw-bolder mb-4">Kegiatan Berlangsung</h3>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5">
-                    <div class="card">
-                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="fw-bold fs-5">Card title</h5>
-                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
+            @foreach ($ongoings as $index => $ongoing)
+                <div class="row justify-content-center align-items-center">
+                    <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5"
+                        {{ $index === 0 ? 'active' : '' }}>
+                        <div class="card">
+                            <img src="image/{{ $ongoing->image }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="fw-bold fs-5">{{ $ongoing->title }}</h5>
+                                <p class="fw-light">{{ $ongoing->description }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5">
-                    <div class="card">
-                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="fw-bold fs-5">Card title</h5>
-                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center pb-5">
-                    <div class="card">
-                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="fw-bold fs-5">Card title</h5>
-                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
             <div class="row mt-5">
                 <div class="col">
                     <h3 class="fs- fw-bolder mb-4">Kegiatan Mendatang</h3>
                 </div>
             </div>
-            <div class="row justify-content-center align-content-center">
-                <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
-                    <div class="card">
-                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="fw-bold fs-5">Card title</h5>
-                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
+            @foreach ($upcomings as $index => $upcoming)
+                <div class="row justify-content-center align-content-center">
+                    <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5"
+                        {{ $index === 0 ? 'active' : '' }}>
+                        <div class="card">
+                            <img src="image/{{ $upcoming->image }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="fw-bold fs-5">{{ $upcoming->title }}</h5>
+                                <p class="fw-light">{{ $upcoming->description }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
-                    <div class="card">
-                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="fw-bold fs-5">Card title</h5>
-                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
-                    <div class="card">
-                        <img src="asset/images/psdm.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="fw-bold fs-5">Card title</h5>
-                            <p class="fw-light">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
             {{-- <h1 class="mx-3">Kegiatan Berlangsung</h1>
             <div class="row">
                 @foreach ($ongoings as $index => $ongoing)
@@ -200,24 +165,6 @@
                 @endforeach
             </div> --}}
         </div>
-
-        {{-- <div class="kegiatan-soon">
-            <h1 class="mx-3">Kegiatan Mendatang</h1>
-            <div class="row">
-                @foreach ($upcomings as $index => $upcoming)
-                    <div class="col-md-4 col-sm-6" {{ $index === 0 ? 'active' : '' }}>
-                        <div class="card">
-                            <img src="image/{{ $upcoming->image }}" alt="" class="img-thumbnail" width="360"
-                                height="140">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ $upcoming->title }}</h5>
-                                <p class="card-text">{{ $upcoming->description }}</p>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div> --}}
     </section>
 
     {{-- Moment --}}

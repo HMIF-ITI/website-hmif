@@ -3,6 +3,17 @@
 @section('title', 'Kepengurusan')
 
 @section('content')
+
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+            <h1 class="mb-3 text-white">Pengurus Himpunan Mahasiswa <span>Teknik Informatika</span></h1>
+            <h6 class="teks text-white">Kepengurusan HMIF 2023/2024 terdiri dari 3 departemen, 5 divisi,<br> dan 59
+                anggota
+                bermandat dengan tugas dan
+                <br>program kerja yang berbeda.
+                </h5>
+        </div>
+    </section>
     <div class="container-fluid">
         <div class="row g-2">
             <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center my-4">

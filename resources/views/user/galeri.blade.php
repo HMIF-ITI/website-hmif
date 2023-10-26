@@ -18,8 +18,8 @@
     <body>
         <section id="hero" class="d-flex align-items-center">
             <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
-                <h1 class="mb-3">Galeri Himpunan Mahasiswa Teknik Informatika ITI</h1>
-                <h6 class="teks">Galeri HMIF ITI, Sarana Inspirasi Teknik Informatika!
+                <h1 class="mb-3 text-white">Galeri Himpunan Mahasiswa Teknik Informatika ITI</h1>
+                <h6 class="teks text-white">Galeri HMIF ITI, Sarana Inspirasi Teknik Informatika!
                     </h5>
             </div>
         </section>
