@@ -14,9 +14,8 @@ return new class extends Migration
         Schema::create('moments', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('title');
+            $table->string('divisi');
             $table->timestamps();
-            $table->string('divisi')->nullable();
         });
     }
 

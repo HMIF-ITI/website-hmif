@@ -6,8 +6,8 @@
 
     <section id="hero" class="d-flex align-items-center">
         <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
-            <h1 class="mb-3">Prestasi Mahasiswa <span>HMIF-ITI</span></h1>
-            <h6 class="teks">Berkilau di Puncak Prestasi! Halaman Prestasi Mahasiswa
+            <h1 class="mb-3 text-white">Prestasi Mahasiswa <span>HMIF-ITI</span></h1>
+            <h6 class="teks text-white">Berkilau di Puncak Prestasi! Halaman Prestasi Mahasiswa
                 <br>HMIF-ITI, Tempat Inspirasi!
                 </h5>
         </div>

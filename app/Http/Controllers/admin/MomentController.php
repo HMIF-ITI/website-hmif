@@ -32,7 +32,7 @@ class MomentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
+            'divisi' => 'required',
             'image' => 'required|image'
         ]);
 
@@ -74,7 +74,7 @@ class MomentController extends Controller
     public function update(Request $request, Moment $moment)
     {
         $request->validate([
-            'title' => 'required',
+            'divisi' => 'required',
             'image' => 'image'
         ]);
 

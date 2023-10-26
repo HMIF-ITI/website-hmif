@@ -11,10 +11,10 @@
                 <form action="{{ route('moment.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="">Judul</label>
-                        <input type="text" class="form-control" name="title" placeholder="Judul">
+                        <label for="">Divisi</label>
+                        <input type="text" class="form-control" name="divisi" placeholder="Judul">
                     </div>
-                    @error('title')
+                    @error('divisi')
                         <small style="color:red">{{ $message }}</small>
                     @enderror
                     <div class="form-group">

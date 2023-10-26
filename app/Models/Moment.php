@@ -10,7 +10,7 @@ class Moment extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title',
+        'divisi',
         'image'
     ];
 }

@@ -17,7 +17,7 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Judul</th>
+                        <th>Divisi</th>
                         <th>Gambar</th>
                         <th>Aksi</th>
                     </tr>
@@ -29,7 +29,7 @@
                     @foreach ($moments as $moment)
                         <tr>
                             <td>{{ $i++ }}</td>
-                            <td>{{ $moment->title }}</td>
+                            <td>{{ $moment->divisi }}</td>
                             <td>
                                 <img src="/image/{{ $moment->image }}" alt="" class="img-fluid" width="90">
                             </td>

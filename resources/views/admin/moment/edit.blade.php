@@ -12,10 +12,10 @@
                     @method('PUT')
                     @csrf
                     <div class="form-group">
-                        <label for="">Judul</label>
-                        <input type="text" class="form-control" name="title" placeholder="Judul" value="{{ $moment->title }}">
+                        <label for="">Divisi</label>
+                        <input type="text" class="form-control" name="divisi" placeholder="Judul" value="{{ $moment->divisi }}">
                     </div>
-                    @error('title')
+                    @error('divisi')
                         <small style="color:red">{{ $message }}</small>
                     @enderror
                     <img src="/image/{{ $moment->image }}" alt="img-fluid">
