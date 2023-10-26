@@ -127,14 +127,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="/admin/contact" class="nav-link">
                                 <i class="nav-icon fas fa-phone"></i>
                                 <p>
                                     Kontak
                                 </p>
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a href="/logout" class="nav-link">
                                 <i class="nav-icon fas fa-arrow-left"></i>
