@@ -115,10 +115,9 @@
                     <h3 class="fs- fw-bolder mb-4">Kegiatan Berlangsung</h3>
                 </div>
             </div>
-            @foreach ($ongoings as $index => $ongoing)
-                <div class="row justify-content-center align-items-center">
-                    <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5"
-                        {{ $index === 0 ? 'active' : '' }}>
+            <div class="row justify-content-center align-items-center">
+                @foreach ($ongoings as $index => $ongoing)
+                    <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
                         <div class="card">
                             <img src="image/{{ $ongoing->image }}" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -127,17 +126,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
             <div class="row">
                 <div class="col">
                     <h3 class="fs- fw-bolder mb-4">Kegiatan Mendatang</h3>
                 </div>
             </div>
-            @foreach ($upcomings as $index => $upcoming)
-                <div class="row justify-content-center align-content-center">
-                    <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5"
-                        {{ $index === 0 ? 'active' : '' }}>
+            <div class="row justify-content-center align-content-center">
+                @foreach ($upcomings as $index => $upcoming)
+                    @if ($index % 2 == 0)
+                        <div class="w-100"></div> <!-- Ini untuk membuat baris baru setiap dua data -->
+                    @endif
+                    <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
                         <div class="card">
                             <img src="image/{{ $upcoming->image }}" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -146,8 +147,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
+
 
             {{-- <h1 class="mx-3">Kegiatan Berlangsung</h1>
             <div class="row">
