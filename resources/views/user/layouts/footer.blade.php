@@ -12,11 +12,14 @@
                 <div class="col-lg-2 col-md-6 footer-links text-white">
                     <h4>Afiliasi Lembaga</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Institut Teknologi Indonesia</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Teknik Informatika ITI</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">MPM ITI</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">BEM ITI</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Permikomnas</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://iti.ac.id/">Institut Teknologi
+                                Indonesia</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://if.iti.ac.id/">Teknik Informatika
+                                ITI</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="">MPM ITI</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="">BEM ITI</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a
+                                href="https://permikomnas.blogspot.com/">Permikomnas</a></li>
                     </ul>
                 </div>
 
@@ -37,6 +40,11 @@
                     <p>{{ $contacts->alamat }}</p>
                     <p>{{ $contacts->email }}</p>
                     <p>{{ $contacts->telepon }}</p> --}}
+
+                    <p>Himpunan Teknik Informatika - ITI</p>
+                    <p>Jl. Raya Puspiptek Serpong Kota Tangerang Selatan 15314</p>
+                    <p>iti.hmif@gmail.com</p>
+                    {{-- <p>{{ $contacts->telepon }}</p> --}}
                 </div>
 
             </div>

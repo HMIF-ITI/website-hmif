@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->string('jabatan');
-            $table->string('departemen');
+            $table->string('departemen')->nullable(true);
             $table->string('instagram');
             $table->string('linkedin');
             $table->string('github');

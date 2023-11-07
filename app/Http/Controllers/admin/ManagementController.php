@@ -34,7 +34,7 @@ class ManagementController extends Controller
         $request->validate([
             'nama' => 'required',
             'jabatan' => 'required',
-            'departemen' => 'required',
+            'departemen' => '',
             'instagram' => 'required',
             'linkedin' => 'required',
             'github' => 'required',

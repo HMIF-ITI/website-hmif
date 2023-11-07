@@ -24,7 +24,7 @@ class HomeController extends Controller
         $moments = Moment::all();
         $contacts = Contact::first();
 
-        return view ('user.landingpage', compact(
+        return view('user.landingpage', compact(
             'ongoings',
             'upcomings',
             'moments',
@@ -37,7 +37,7 @@ class HomeController extends Controller
         $achievments = Achievment::all();
         $contacts = Contact::first();
 
-        return view ('user.prestasi', compact(
+        return view('user.prestasi', compact(
             'achievments',
             'contacts'
         ));
@@ -48,7 +48,7 @@ class HomeController extends Controller
         $galleries = Gallery::all();
         $contacts = Contact::first();
 
-        return view ('user.galeri', compact(
+        return view('user.galeri', compact(
             'galleries',
             'contacts'
         ));
@@ -57,18 +57,16 @@ class HomeController extends Controller
     public function departemen()
     {
         $contacts = Contact::first();
+        $managements = Management::all();
 
-        return view ('user.departemen', compact(
-            'contacts'
-        ));
+        return view('user.departemen', ['contacts' => $contacts, 'managements' => $managements]);
     }
 
     public function kepengurusan()
     {
         $contacts = Contact::first();
+        $managements = Management::all();
 
-        return view ('user.kepengurusan', compact(
-            'contacts'
-        ));
+        return view('user.kepengurusan', ['contacts' => $contacts, 'managements' => $managements]);
     }
 }

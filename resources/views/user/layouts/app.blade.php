@@ -30,6 +30,24 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 
+    <script>
+        // Tangkap elemen navbar
+        var navbar = document.querySelector('.navbar-transparan');
+
+        // Tangkap tinggi navbar
+        var navbarHeight = navbar.offsetHeight;
+
+        // Tambahkan event listener untuk mengubah warna latar belakang saat menggulir
+        window.addEventListener('scroll', function() {
+            if (window.scrollY >= navbarHeight) {
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)'; // Ganti dengan warna yang Anda inginkan
+            } else {
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // Transparan ketika di atas navbar
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>

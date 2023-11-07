@@ -84,15 +84,12 @@
             <div class="row mb-5">
                 <div class="col">
                     <span class="fw-normal text-secondary lh-1">PROGRAM KERJA</span>
-                    <h3 class="fs- fw-bolder mb-3">Aksi Kami untuk Kemajuan Bersama!</h3>
+                    <h3 class="fs-2 fw-bolder mb-3">Aksi Kami untuk Kemajuan Bersama!</h3>
                 </div>
             </div>
             <div class="row row-cols-lg-3 row-cols-md-3 row-cols-2 mx-auto text-center justify-content-center list-proker">
                 <div class="col">
                     <p>ABDIMAS</p>
-                </div>
-                <div class="col">
-                    <p>PERMAKOM</p>
                 </div>
                 <div class="col">
                     <p>INFOCUP</p>
@@ -112,7 +109,7 @@
         <div class="kegiatan-progress container">
             <div class="row">
                 <div class="col">
-                    <h3 class="fs- fw-bolder mb-4">Kegiatan Berlangsung</h3>
+                    <h3 class="fs-3 fw-bolder mb-4">Kegiatan Berlangsung</h3>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center">
@@ -171,18 +168,25 @@
 
     {{-- Moment --}}
     <section id="moment">
-        <div class="moment-judul text-center">
-            <h1>Moment Terbaik Bersama Kami</h1>
-        </div>
-        <div class="row">
-            @foreach ($moments as $moment)
-                <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                        <img src="image/{{ $moment->image }}" alt="" class="img-thumbnail" width="360"
-                            height="140">
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="fs-2 fw-bolder mb-3 text-center">Moment Terbaik Bersama Kami</h3>
                 </div>
-            @endforeach
+            </div>
+            {{-- <div class="moment-judul text-center">
+                <h1></h1>
+            </div> --}}
+            <div class="row">
+                @foreach ($moments as $moment)
+                    <div class="col col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center pb-5">
+                        <div class="card">
+                            <img src="image/{{ $moment->image }}" alt="" class="img-thumbnail" width="360"
+                                height="140">
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </section>
 
