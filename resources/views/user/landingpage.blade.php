@@ -204,7 +204,25 @@
                     </div>
                 </div>
                 <div class="col-lg-8" data-aos="fade-right">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    <form action="{{ route('submit.feedback') }}" method="post" role="form"
+                        class="php-email-form mt-4">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name"
