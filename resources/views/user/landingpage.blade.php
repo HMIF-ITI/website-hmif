@@ -92,7 +92,7 @@
                     <p>ABDIMAS</p>
                 </div>
                 <div class="col">
-                    <p>INFOCUP</p>
+                    <p>Festival Technology</p>
                 </div>
                 <div class="col">
                     <p>PELITA</p>

@@ -42,8 +42,9 @@
                     <p>{{ $contacts->telepon }}</p> --}}
 
                     <p>Himpunan Teknik Informatika - ITI</p>
-                    <p>Jl. Raya Puspiptek Serpong Kota Tangerang Selatan 15314</p>
-                    <p>iti.hmif@gmail.com</p>
+                    <p><a href="https://maps.app.goo.gl/cqrhSbo9vDjKux3t8" target="_blank">Jl. Raya Puspiptek Serpong
+                            Kota Tangerang Selatan 15314</a></p>
+                    <p><a href="mailto:hmif.iti.1992@gmail.com">hmif.iti.1992@gmail.com</a></p>
                     {{-- <p>{{ $contacts->telepon }}</p> --}}
                 </div>
 
